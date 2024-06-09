@@ -1,0 +1,168 @@
+/*STYLE FOR THE INDEX PAGE*/
+body {
+  max-width: 80vw;
+  margin: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  align-items: center;
+  justify-items: center;
+  grid-gap: 20px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+.button-recognize {
+  display: block;
+  margin: 20px auto;
+  background-color: beige;
+  color: rgb(78, 78, 78);
+  padding: 5px 10px;
+  border: dotted 2px rgb(11, 100, 11);
+  box-shadow: 5px 5px 5px hsl(0deg 0% 0% / 0.3);
+  border-radius: 10px;
+  letter-spacing: 3px;
+}
+
+.button-recognize:hover {
+  scale: 1.05;
+}
+
+.images img {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+.images {
+  width: 200px;
+  max-height: auto;
+  position: relative;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.images::before {
+  content: "";
+  position: absolute;
+  background-image: conic-gradient(red, orange, yellow, green, blue, indigo);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  animation: rotate 3.5s linear infinite;
+  opacity: 1;
+  scale: 1.5;
+  filter: blur(10px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.content {
+  position: relative;
+  padding: 3px;
+  background: beige;
+  background-clip: content-box, padding-box;
+  border-radius: 15px;
+}
+
+.items {
+  width: 200px;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.45);
+  border-radius: 15px;
+}
+
+.hint-txt {
+  color: rgb(68, 68, 68);
+  text-align: center;
+}
+
+.top-header h1 {
+  background-color: rgb(220, 220, 0);
+  color: rgb(255, 255, 255);
+  padding: 15px 10px;
+  box-shadow: 2px 5px 5px hsl(0deg 0% 0% / 0.35);
+  letter-spacing: 3px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(15px + 2vw);
+}
+
+.buttons-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10vw;
+}
+
+/*STYLE FOR THE HOME PAGE*/
+
+.btn-rep {
+  display: inline-block;
+  background-color: beige;
+  color: rgb(202, 13, 107);
+}
+
+.home-content-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.home-content::before {
+  content: "";
+  position: absolute;
+  background-image: conic-gradient(red, orange, yellow, green, blue, indigo);
+  height: calc(100vh * 4);
+  width: calc(100vw * 2);
+  z-index: -1;
+  animation: rotate 3.5s linear infinite;
+  opacity: 1;
+  scale: 1.5;
+  filter: blur(10px);
+}
+
+.home-bg {
+  position: relative;
+  padding: 3px;
+  background: beige;
+  background-clip: content-box, padding-box;
+  border-radius: 15px;
+}
+
+.home-content img {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+.detail {
+  margin-bottom: 25px;
+}
+
+.details {
+  padding: 10px;
+}

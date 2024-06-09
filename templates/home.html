@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="home--header">
+      <div class="top-header">
+        <h1>RECOGNIZED IMAGE</h1>
+      </div>
+    </header>
+    <div class="home-content-wrapper">
+      <div class="home-bg">
+        <div class="home-content">
+          <img
+            src="data:image/jpeg;base64,{{ image }}"
+            style="max-width: 250px"
+          />
+          <div style="max-width: 250px" class="detail">
+            <div class="details detail--1">Name: {{ name }}</div>
+            <div class="details detail--2">Confidance: {{ confidance }}</div>
+            <div class="details detail--3">Department: {{ Department }}</div>
+            <div class="details detail--4">Personality: {{ personality }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="button-recognize" onclick="window.location.href='/'">
+      GO BACK
+    </button>
+  </body>
+</html>
