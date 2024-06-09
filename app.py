@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import base64
 import numpy as np
-# from keras.models import load_model
+from keras.models import load_model
 from PIL import Image
 import io
 
