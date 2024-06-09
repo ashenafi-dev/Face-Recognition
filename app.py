@@ -12,7 +12,7 @@ def index():
     return render_template('index.html')
 
 # Load the trained face recognition model
-model = load_model('model/my_model45mb.h5')
+model = load_model('model/my_model.h5')
     
 @app.route('/home', methods=['POST'])
 def home():
