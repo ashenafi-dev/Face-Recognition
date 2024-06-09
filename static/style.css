@@ -6,10 +6,10 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14vw, 1fr));
   align-items: center;
   justify-items: center;
-  grid-gap: 20px;
+  grid-gap: 2.5vw;
   margin: auto;
   margin-top: 25px;
   margin-bottom: 75px;
