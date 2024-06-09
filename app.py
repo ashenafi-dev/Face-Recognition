@@ -15,7 +15,7 @@ def index():
     return render_template('index.html')
 
 # Load the trained face recognition model
-# model = load_model('model/my_model.h5')
+model = load_model('model/my_model.h5')
     
 @app.route('/home', methods=['POST'])
 def home():
@@ -27,7 +27,7 @@ def home():
         imageDisplayArray = np.array(imageDisplay)
 
         # resize the image to match the trained network dimensions
-        img_resized = image.resize((64, 64))
+        img_resized = image.resize((100, 100))
         img_data = np.array(img_resized)
 
 
